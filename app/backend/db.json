@@ -1,0 +1,617 @@
+{
+  "funcionarios": [
+    {
+      "id": "joaquim",
+      "nome": "Joaquim Silva",
+      "passe": "12345",
+      "especializacao": "geral"
+    },
+    {
+      "id": "maria",
+      "nome": "Maria Santos",
+      "passe": "12345",
+      "especializacao": "combustao"
+    },
+    {
+      "id": "jose",
+      "nome": "JosÃ© Pereira",
+      "passe": "12345",
+      "especializacao": "eletrico"
+    },
+    {
+      "id": "ana",
+      "nome": "Ana Pereira",
+      "passe": "12345",
+      "especializacao": "geral"
+    }
+  ],
+  "serviceDefinitions": [
+    {
+      "id": "sp",
+      "descr": "Substituir pneus",
+      "duracao": 40
+    },
+    {
+      "id": "cr",
+      "descr": "Calibrar rodas",
+      "duracao": 20
+    },
+    {
+      "id": "ad",
+      "descr": "Alinhar direÃ§Ã£o",
+      "duracao": 30
+    },
+    {
+      "id": "sct",
+      "descr": "Subsituir calÃ§os travÃµes",
+      "duracao": 60
+    },
+    {
+      "id": "mot",
+      "descr": "Mudar Ã³leo travÃµes",
+      "duracao": 20
+    },
+    {
+      "id": "li",
+      "descr": "Limpeza interior",
+      "duracao": 120
+    },
+    {
+      "id": "le",
+      "descr": "Limpeza exterior",
+      "duracao": 30
+    },
+    {
+      "id": "sfah",
+      "descr": "Substituir filtro ar habitÃ¡culo",
+      "duracao": 30
+    },
+    {
+      "id": "mom",
+      "descr": "Mudar Ã³leo motor",
+      "duracao": 10
+    },
+    {
+      "id": "sfo",
+      "descr": "Substituir filtro Ã³leo",
+      "duracao": 20
+    },
+    {
+      "id": "sfc",
+      "descr": "Substituir filtro combustÃ­vel",
+      "duracao": 30
+    },
+    {
+      "id": "sfam",
+      "descr": "Substituir filtro ar motor",
+      "duracao": 30
+    },
+    {
+      "id": "scc",
+      "descr": "Substituir conversor catalÃ­tico",
+      "duracao": 30
+    },
+    {
+      "id": "sba",
+      "descr": "Substituir bateria de arranque",
+      "duracao": 30
+    },
+    {
+      "id": "svi",
+      "descr": "Substituir velas de incandescÃªncia",
+      "duracao": 30
+    },
+    {
+      "id": "sfp",
+      "descr": "Substituir filtro de partÃ­culas",
+      "duracao": 30
+    },
+    {
+      "id": "rfp",
+      "descr": "Regenerar filtro de partÃ­culas",
+      "duracao": 30
+    },
+    {
+      "id": "sva",
+      "descr": "Substituir vÃ¡lvula do acelerador",
+      "duracao": 30
+    },
+    {
+      "id": "svi",
+      "descr": "Substituir velas de igniÃ§Ã£o",
+      "duracao": 30
+    },
+    {
+      "id": "adb",
+      "descr": "Avaliar desempenho da bateria",
+      "duracao": 30
+    },
+    {
+      "id": "sb",
+      "descr": "Substituir bateria",
+      "duracao": 20
+    }
+  ],
+  "vehicle-types": [
+    {
+      "id": "gasolina",
+      "servicos": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot",
+        "li",
+        "le",
+        "sfah",
+        "mom",
+        "sfo",
+        "sfc",
+        "sfam",
+        "scc",
+        "sba",
+        "sva",
+        "svi"
+      ]
+    },
+    {
+      "id": "gasoleo",
+      "servicos": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot",
+        "li",
+        "le",
+        "sfah",
+        "mom",
+        "sfo",
+        "sfc",
+        "sfam",
+        "scc",
+        "sba",
+        "svi",
+        "sfp",
+        "rfp"
+      ]
+    },
+    {
+      "id": "eletrico",
+      "servicos": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot",
+        "li",
+        "le",
+        "sfah",
+        "adb",
+        "sb"
+      ]
+    },
+    {
+      "id": "hibrido",
+      "servicos": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot",
+        "li",
+        "le",
+        "sfah",
+        "mom",
+        "sfo",
+        "sfc",
+        "sfam",
+        "scc",
+        "sba",
+        "sva",
+        "svi",
+        "adb",
+        "sb"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": "123",
+      "nome": "JoÃ£o Silva",
+      "email": "js@imail.com",
+      "telefone": "912345678"
+    },
+    {
+      "id": "124",
+      "nome": "Maria Santos",
+      "email": "jms@imail.com",
+      "telefone": "912345679"
+    },
+    {
+      "id": "125",
+      "nome": "JosÃ© Pereira",
+      "email": "jp@imail.com",
+      "telefone": "912345680"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "08-25-AA",
+      "clientId": "123",
+      "vehicleTypeId": "gasolina",
+      "marca": "Ford",
+      "modelo": "Focus",
+      "cilindrada": 1000,
+      "kms": 200000
+    },
+    {
+      "id": "AH-31-BB",
+      "clientId": "124",
+      "vehicleTypeId": "gasoleo",
+      "marca": "Renault",
+      "modelo": "Megane",
+      "cilindrada": 2000,
+      "kms": 120000
+    },
+    {
+      "id": "AH-32-44",
+      "clientId": "123",
+      "vehicleTypeId": "eletrico",
+      "marca": "Tesla",
+      "modelo": "Model S",
+      "potencia": 200,
+      "kms": 20000
+    },
+    {
+      "id": "AH-21-25",
+      "clientId": "125",
+      "vehicleTypeId": "hibrido",
+      "marca": "BMW",
+      "modelo": "i4",
+      "cilindrada": 1000,
+      "potencia": 200,
+      "kms": 80000
+    }
+  ],
+  "services": [
+    {
+      "id": "s59",
+      "estado": "nafila",
+      "serviceDefinitionId": "rfp",
+      "agendamento": "filaDeEspera",
+      "descricao": "Filtro de particulas",
+      "vehicleId": "AH-21-25"
+    },
+    {
+      "id": "s35",
+      "estado": "realizado",
+      "serviceDefinitionId": "sct",
+      "agendamento": "filaDeEspera",
+      "descricao": "Verificar travões",
+      "vehicleId": "AH-21-25",
+      "recomendacao": "dadsa"
+    },
+    {
+      "id": "s36",
+      "estado": "suspenso",
+      "serviceDefinitionId": "mot",
+      "agendamento": "filaDeEspera",
+      "descricao": "Trocar óleo dos travões",
+      "vehicleId": "AH-31-BB"
+    },
+    {
+      "id": "s37",
+      "estado": "suspenso",
+      "serviceDefinitionId": "le",
+      "agendamento": "programado",
+      "descricao": "Lavar jantes",
+      "vehicleId": "08-25-AA",
+      "data": {
+        "dia": 10,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 9,
+        "minutos": 30
+      },
+      "motivo": "dsadsad"
+    },
+    {
+      "id": "s33",
+      "estado": "iniciado",
+      "serviceDefinitionId": "le",
+      "agendamento": "filaDeEspera",
+      "descricao": "Ver jantes.",
+      "vehicleId": "AH-32-44"
+    },
+    {
+      "id": "s34",
+      "estado": "suspenso",
+      "serviceDefinitionId": "sfc",
+      "agendamento": "filaDeEspera",
+      "descricao": "O filtro partiu-se.",
+      "vehicleId": "AH-21-25",
+      "motivo": "motivo invalido"
+    },
+    {
+      "id": "s12",
+      "estado": "realizado",
+      "serviceDefinitionId": "sp",
+      "agendamento": "filaDeEspera",
+      "descricao": "Colocar XPTO 225R15",
+      "vehicleId": "08-25-AA",
+      "recomendacao": "fogo"
+    },
+    {
+      "id": "s24",
+      "vehicleId": "08-25-AA",
+      "serviceDefinitionId": "li",
+      "estado": "nafila",
+      "agendamento": "programado",
+      "data": {
+        "dia": 2,
+        "mes": 2,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "descricao": "shampoo XPTO"
+    },
+    {
+      "id": "s20",
+      "estado": "suspenso",
+      "serviceDefinitionId": "adb",
+      "agendamento": "programado",
+      "descricao": "Problema na bateria",
+      "vehicleId": "AH-32-44",
+      "data": {
+        "dia": 2,
+        "mes": 2,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 15
+      },
+      "motivo": "deixa ver"
+    },
+    {
+      "id": "s38",
+      "estado": "nafila",
+      "serviceDefinitionId": "cr",
+      "agendamento": "filaDeEspera",
+      "descricao": "Calibrar rodas",
+      "vehicleId": "AH-21-25",
+      "data": {
+        "dia": 15,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 10,
+        "minutos": 30
+      }
+    },
+    {
+      "id": "s39",
+      "estado": "nafila",
+      "serviceDefinitionId": "ad",
+      "agendamento": "filaDeEspera",
+      "descricao": "Alinhar direção",
+      "vehicleId": "AH-31-BB",
+      "data": {
+        "dia": 16,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 11,
+        "minutos": 45
+      }
+    },
+    {
+      "id": "s40",
+      "estado": "nafila",
+      "serviceDefinitionId": "sct",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir calços travões",
+      "vehicleId": "08-25-AA",
+      "data": {
+        "dia": 17,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 9,
+        "minutos": 0
+      }
+    },
+    {
+      "id": "s41",
+      "estado": "nafila",
+      "serviceDefinitionId": "mot",
+      "agendamento": "filaDeEspera",
+      "descricao": "Mudar óleo travões",
+      "vehicleId": "AH-32-44",
+      "data": {
+        "dia": 18,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 30
+      }
+    },
+    {
+      "id": "s42",
+      "estado": "nafila",
+      "serviceDefinitionId": "li",
+      "agendamento": "filaDeEspera",
+      "descricao": "Limpeza interior",
+      "vehicleId": "AH-21-25",
+      "data": {
+        "dia": 19,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 12,
+        "minutos": 0
+      }
+    },
+    {
+      "id": "s43",
+      "estado": "nafila",
+      "serviceDefinitionId": "le",
+      "agendamento": "filaDeEspera",
+      "descricao": "Limpeza exterior",
+      "vehicleId": "AH-31-BB",
+      "data": {
+        "dia": 20,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 10,
+        "minutos": 30
+      }
+    },
+    {
+      "id": "s44",
+      "estado": "nafila",
+      "serviceDefinitionId": "sfah",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir filtro ar habitáculo",
+      "vehicleId": "08-25-AA",
+      "data": {
+        "dia": 21,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 11,
+        "minutos": 45
+      }
+    },
+    {
+      "id": "s45",
+      "estado": "nafila",
+      "serviceDefinitionId": "mom",
+      "agendamento": "filaDeEspera",
+      "descricao": "Mudar óleo motor",
+      "vehicleId": "AH-32-44",
+      "data": {
+        "dia": 22,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 9,
+        "minutos": 0
+      }
+    },
+    {
+      "id": "s46",
+      "estado": "nafila",
+      "serviceDefinitionId": "sfo",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir filtro óleo",
+      "vehicleId": "AH-21-25",
+      "data": {
+        "dia": 23,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 30
+      }
+    },
+    {
+      "id": "s47",
+      "estado": "nafila",
+      "serviceDefinitionId": "sfc",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir filtro combustível",
+      "vehicleId": "AH-31-BB",
+      "data": {
+        "dia": 24,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 12,
+        "minutos": 0
+      }
+    },
+    {
+      "id": "s48",
+      "estado": "nafila",
+      "serviceDefinitionId": "sfam",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir filtro ar motor",
+      "vehicleId": "08-25-AA",
+      "data": {
+        "dia": 25,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 10,
+        "minutos": 30
+      }
+    },
+    {
+      "id": "s49",
+      "estado": "nafila",
+      "serviceDefinitionId": "scc",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir conversor catalítico",
+      "vehicleId": "AH-32-44",
+      "data": {
+        "dia": 26,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 11,
+        "minutos": 45
+      }
+    },
+    {
+      "id": "s50",
+      "estado": "nafila",
+      "serviceDefinitionId": "sba",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir bateria de arranque",
+      "vehicleId": "AH-21-25",
+      "data": {
+        "dia": 27,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 9,
+        "minutos": 0
+      }
+    },
+    {
+      "id": "s51",
+      "estado": "nafila",
+      "serviceDefinitionId": "sva",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir velas de incandescência",
+      "vehicleId": "AH-31-BB",
+      "data": {
+        "dia": 28,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 14,
+        "minutos": 30
+      }
+    },
+    {
+      "id": "s52",
+      "estado": "nafila",
+      "serviceDefinitionId": "sfp",
+      "agendamento": "filaDeEspera",
+      "descricao": "Substituir filtro de partículas",
+      "vehicleId": "08-25-AA",
+      "data": {
+        "dia": 29,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 12,
+        "minutos": 0
+      }
+    },
+    {
+      "id": "s53",
+      "estado": "nafila",
+      "serviceDefinitionId": "rfp",
+      "agendamento": "filaDeEspera",
+      "descricao": "Regenerar filtro de partículas",
+      "vehicleId": "AH-32-44",
+      "data": {
+        "dia": 30,
+        "mes": 4,
+        "ano": 2024,
+        "hora": 10,
+        "minutos": 30
+      }
+    }
+  ]
+}
